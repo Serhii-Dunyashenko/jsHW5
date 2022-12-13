@@ -35,42 +35,55 @@ const c4 = 37;
 let n4 = 2;
 let y4
 let triger = 0;
-while (n4 <= c4-1) {
-    y4 = c4 % n4;
-    switch (y4) {
-        case 0 :
-            triger++;
-        break;
-        default :
-            triger = triger + 0;
-        break;
+if (c4 === 1) {
+    console.log('1 is another type of number')
+} else if (c4 === 0){
+    console.log('0 is another type of number')
+} else {
+    while (n4 <= c4-1) {
+        y4 = c4 % n4;
+        switch (y4) {
+            case 0 :
+                triger++;
+            break;
+            default :
+                triger = triger + 0;
+            break;
+        }
+        n4++;
     }
-    n4++;
+        switch (triger) {
+            case 0 : 
+                console.log(`${c4} is a simple number`)
+            break;
+            default : 
+                console.log(`${c4} is a complex number`)
+            break;
+        }
 }
-    switch (triger) {
-        case 0 : 
-            console.log(`${c4} is a simple number`)
-        break;
-        default : 
-            console.log(`${c4} is a complex number`)
-        break;
-    }
+
 
 // 5. Дане деяке число. Визначити, чи можна одержати це число шляхом зведення числа 3 у деякий ступінь. 
 // (Наприклад, числа 9, 81 можна отримати, а 13 - не можна).
 
-const c5 = 57;
+const c5 = 81;
 let deg = 1;
 let res5
+let triger5 = 0;
 
-while (deg <= c5) {
+while (deg <= c5 - 1) {
     res5 = 3**deg;
-    deg++;
     switch (res5) {
         case c5 : 
-        console.log(`3 in ${deg} degree is ${c5}`)
+        console.log(`3 in ${deg} degree is ${c5}`);
+        triger5++
         break;
         default : 
         break;
     }
+    deg++;
+}
+switch (triger5) {
+    case 0 :
+    console.log('number cannot be aquired by exponenting 3');
 }
