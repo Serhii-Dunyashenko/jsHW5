@@ -1,12 +1,12 @@
 //Вивести на сторінку в один рядок через кому числа від 10 до 20.
 
 let c1 = 10;
-
+let string1 = ""
 while (c1<= 20) {
-    console.log(c1);
+    string1 = `${string1}` + `${c1} `;
     c1++ ;
 }
-
+console.log(string1);
 // Вивести квадрати чисел від 10 до 20.
 
 let c2 = 10;
@@ -17,28 +17,28 @@ do {
 
 // Вивести таблицю множення на 7.
 
-for (let c3 = 0; c3 <= 10; console.log(c3*7), c3++);
+for (let c3 = 1; c3 <= 10; console.log(c3*7), c3++);
 
 // Знайти суму всіх цілих чисел від 1 до 15.
 let c4 = 0
 let sum41 = 0;
 
-while (c4 <=16) {
-    console.log(sum41);
+while (c4 <=15) {
+
     sum41 = sum41 + c4;
     c4++;
 }
-
+console.log(sum41);
 // Знайти добуток усіх цілих чисел від 15 до 35.
 
 let c5 = 15;
 let res5 = 1;
 
 while (c5 <=35) {
-    console.log(res5);
     res5 = res5 * c5;
     c5++;
 }
+console.log(res5);
 
 // Знайти середнє арифметичне всіх цілих чисел від 1 до 500.
 
